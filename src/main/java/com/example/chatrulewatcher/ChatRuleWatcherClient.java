@@ -50,7 +50,7 @@ public final class ChatRuleWatcherClient implements ClientModInitializer {
             String rule = detectRule(raw, normalized);
             if (rule == null) return;
 
-            String playerName = sender.getName();
+            String playerName = sender.Name();
             String excerpt = raw.replaceAll("\\s+", " ").trim();
             if (excerpt.length() > 100) excerpt = excerpt.substring(0, 97) + "...";
             Text alert = Text.literal("§c[МОДЕРАЦИЯ] §f" + playerName + " §7— §e" + rule

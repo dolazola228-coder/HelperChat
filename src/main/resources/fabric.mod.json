@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "chatrulewatcher",
+  "version": "${version}",
+  "name": "Chat Rule Watcher (Helper Client)",
+  "description": "Local chat moderation alerts for a helper client.",
+  "authors": ["ChatGPT"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.chatrulewatcher.ChatRuleWatcherClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
